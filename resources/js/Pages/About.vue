@@ -1,13 +1,12 @@
-
 <script setup>
-import {Link} from '@inertiajs/vue3';
+import AppLayout from '@/Layouts/AppLayout.vue'
+import { Head } from '@inertiajs/vue3'
 </script>
- 
 <template>
-    <div>
-         <h2> About Us </h2>
-         <Link href="/">Home</Link>
-         <Link href="/about">About</Link> 
-         <Link href="/contact">Contact</Link>  
-    </div>
+  <AppLayout>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+          <Head title="About Us" />
+          <h1>About Us</h1>
+      </div>
+  </AppLayout>
 </template>
